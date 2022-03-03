@@ -1,11 +1,11 @@
 module.exports = {
     dialect: 'mysql',
     host: 'localhost',
-    user: 'root',
+    username: 'root',
     password: '',
     database: 'crud-node',
     define: {
-        timestamp: true,
-        underscored: true,
+      timestamp: true,
+      underscored: true,
     }
-}
+  }
