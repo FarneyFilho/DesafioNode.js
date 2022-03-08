@@ -1,15 +1,8 @@
 const { Router } = require('express')
-const User = require('./models/user')
 
+const UserController = require('./controller/userController')
 const router = Router()
 
-router.post('/', async(req, res) => {
-
-    const {name, email} = req.body
-
-    const user = await User.create({name, email})
-
-    res.json({user})
-})
+router.post('/user-create', UserController.createUser)
 
 module.exports = router
