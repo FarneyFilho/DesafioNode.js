@@ -1,7 +1,7 @@
 const User = require('../models/user')
 
 module.exports = {
-    async createUser(req, res) {
+    async createUser(request, response) {
 
         try {
             const { name, email } = req.body
@@ -10,15 +10,15 @@ module.exports = {
 
             if (user) {
 
-                res.status(200).json({ message: "Já existe usuario com este email" })
+                response.status(200).json({ message: "Já existe usuario com este email" })
             } else {
                 await User.create({ name, email })
 
-                res.status(200).json({ user })
+                response.status(200).json({message: 'Usuario inserido com sucesso!', name, email })
             }
 
         } catch (error) {
-            res.status(400).json({ error })
+            response.status(400).json({ error })
         }
     }
 }
