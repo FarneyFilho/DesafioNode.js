@@ -41,7 +41,7 @@ module.exports = {
             response.status(400).json({ error })
         }
     },
-    //Lista de usuários
+    //Lista de usuários cadastrados
     async listUsers(request, response) {
 
         try {
