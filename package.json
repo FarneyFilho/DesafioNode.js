@@ -1,16 +1,15 @@
 {
-  "name": "crud",
+  "name": "desafio-tatubit",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Desafio de back-end da TatuBit",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Farney Filho <farney_filho@hotmail.com>",
+  "repository": "github:FarneyFilho/DesafioNode.js",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcrypt": "^5.0.1",
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
@@ -19,5 +18,11 @@
   "devDependencies": {
     "nodemon": "^2.0.15",
     "sequelize-cli": "^6.4.1"
-  }
+  },
+  "engine": {
+    "node": "^16.14.0",
+    "npm": "^8.3.1"
+  },
+  "private": true
+
 }
